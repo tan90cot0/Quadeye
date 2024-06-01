@@ -1,0 +1,1 @@
+1. Made case by case if else statements for profits and volumes
