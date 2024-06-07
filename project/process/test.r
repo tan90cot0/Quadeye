@@ -2,7 +2,7 @@ source("functions.R")
 library(data.table)
 options(scipen = 999)
 
-result <- get_data(2)
+result <- get_data(4)
 month = result$month
 mapping_month = result$mapping_month
 directory = result$directory
@@ -68,4 +68,4 @@ for (j in seq_along(month)) {
     }
 }
 print(nrow(new_df))
-write.csv(new_df, file = "month2.csv")
+write.csv(new_df, file = "month4.csv")
