@@ -44,7 +44,13 @@
         5. 500: 1869665
     4. Rolling mean with window:
         1. 20: 1096842.5
-        2. 200: 1099021 (best)
+        2. 200: 1099021
+        3. 300: 1107179
+        4. 400: 1122296
+        5. 500: 11312405
+        6. 600: 1153292
+        7. 700: 11725545
+        8. 1000: 12068805 (best, increasing)
     5. Exponential moving average
         1. 700: 1818175
         2. 600: 1847525
@@ -54,9 +60,24 @@
         6. 350: 1877899 (best)
         7. 325: 1874030
         8. 300: 1856391
+    6. Exponential moving average with reset
+        1. 525: 1886441.5
+        2. 550: 1919876 (best)
+        3. 575: 1852522.5
+        3. 600: 1900151.5 
+        4. 625: 1859514.5
+        5. 650: 1868730
 
 
 # to do:
 1. insights
 2. pnl
 3. mean+- std dev will work well when doing bid-ask. when working on mid price, making upper and lower threshold spread = 0 is best for maximising profit, because that will maximise money usage without incurring any transaction cost.
+
+4. ema reacts more significantly to recent price changes
+
+# dont assume mean 0 at the start
+# check when profits are made during the reset
+# if negative position then put a buy side bias
+
+# check gap for bid ask(thresholds)
